@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5C2A2962C3D7B3F009F219C /* Piggy_BankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2952C3D7B3F009F219C /* Piggy_BankApp.swift */; };
+		A5C2A2982C3D7B3F009F219C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2972C3D7B3F009F219C /* ContentView.swift */; };
+		A5C2A29A2C3D7B3F009F219C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2992C3D7B3F009F219C /* Item.swift */; };
+		A5C2A29C2C3D7B46009F219C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C2A29B2C3D7B45009F219C /* Assets.xcassets */; };
+		A5C2A29F2C3D7B46009F219C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C2A29E2C3D7B46009F219C /* Preview Assets.xcassets */; };
+		A5C2A2A92C3D7B46009F219C /* Piggy_BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2A82C3D7B46009F219C /* Piggy_BankTests.swift */; };
+		A5C2A2B32C3D7B47009F219C /* Piggy_BankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2B22C3D7B47009F219C /* Piggy_BankUITests.swift */; };
+		A5C2A2B52C3D7B47009F219C /* Piggy_BankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2B42C3D7B47009F219C /* Piggy_BankUITestsLaunchTests.swift */; };
+		A5C2A2C42C3DCD47009F219C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C2A2C32C3DCD47009F219C /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5C2A2A52C3D7B46009F219C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C2A28A2C3D7B3F009F219C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C2A2912C3D7B3F009F219C;
+			remoteInfo = "Piggy-Bank";
+		};
+		A5C2A2AF2C3D7B47009F219C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C2A28A2C3D7B3F009F219C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C2A2912C3D7B3F009F219C;
+			remoteInfo = "Piggy-Bank";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5C2A2922C3D7B3F009F219C /* Piggy Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Piggy Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C2A2952C3D7B3F009F219C /* Piggy_BankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piggy_BankApp.swift; sourceTree = "<group>"; };
+		A5C2A2972C3D7B3F009F219C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5C2A2992C3D7B3F009F219C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A5C2A29B2C3D7B45009F219C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C2A29E2C3D7B46009F219C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5C2A2A42C3D7B46009F219C /* Piggy-BankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Piggy-BankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C2A2A82C3D7B46009F219C /* Piggy_BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piggy_BankTests.swift; sourceTree = "<group>"; };
+		A5C2A2AE2C3D7B47009F219C /* Piggy-BankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Piggy-BankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C2A2B22C3D7B47009F219C /* Piggy_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piggy_BankUITests.swift; sourceTree = "<group>"; };
+		A5C2A2B42C3D7B47009F219C /* Piggy_BankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piggy_BankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5C2A2C32C3DCD47009F219C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5C2A28F2C3D7B3F009F219C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C2A2A12C3D7B46009F219C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C2A2AB2C3D7B46009F219C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5C2A2892C3D7B3F009F219C = {
+			isa = PBXGroup;
+			children = (
+				A5C2A2942C3D7B3F009F219C /* Piggy-Bank */,
+				A5C2A2A72C3D7B46009F219C /* Piggy-BankTests */,
+				A5C2A2B12C3D7B47009F219C /* Piggy-BankUITests */,
+				A5C2A2932C3D7B3F009F219C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5C2A2932C3D7B3F009F219C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5C2A2922C3D7B3F009F219C /* Piggy Bank.app */,
+				A5C2A2A42C3D7B46009F219C /* Piggy-BankTests.xctest */,
+				A5C2A2AE2C3D7B47009F219C /* Piggy-BankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5C2A2942C3D7B3F009F219C /* Piggy-Bank */ = {
+			isa = PBXGroup;
+			children = (
+				A5C2A2952C3D7B3F009F219C /* Piggy_BankApp.swift */,
+				A5C2A2972C3D7B3F009F219C /* ContentView.swift */,
+				A5C2A2992C3D7B3F009F219C /* Item.swift */,
+				A5C2A29B2C3D7B45009F219C /* Assets.xcassets */,
+				A5C2A29D2C3D7B46009F219C /* Preview Content */,
+				A5C2A2C32C3DCD47009F219C /* Launch Screen.storyboard */,
+			);
+			path = "Piggy-Bank";
+			sourceTree = "<group>";
+		};
+		A5C2A29D2C3D7B46009F219C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A5C2A29E2C3D7B46009F219C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5C2A2A72C3D7B46009F219C /* Piggy-BankTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C2A2A82C3D7B46009F219C /* Piggy_BankTests.swift */,
+			);
+			path = "Piggy-BankTests";
+			sourceTree = "<group>";
+		};
+		A5C2A2B12C3D7B47009F219C /* Piggy-BankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C2A2B22C3D7B47009F219C /* Piggy_BankUITests.swift */,
+				A5C2A2B42C3D7B47009F219C /* Piggy_BankUITestsLaunchTests.swift */,
+			);
+			path = "Piggy-BankUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5C2A2912C3D7B3F009F219C /* Piggy-Bank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C2A2B82C3D7B47009F219C /* Build configuration list for PBXNativeTarget "Piggy-Bank" */;
+			buildPhases = (
+				A5C2A28E2C3D7B3F009F219C /* Sources */,
+				A5C2A28F2C3D7B3F009F219C /* Frameworks */,
+				A5C2A2902C3D7B3F009F219C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Piggy-Bank";
+			productName = "Piggy-Bank";
+			productReference = A5C2A2922C3D7B3F009F219C /* Piggy Bank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5C2A2A32C3D7B46009F219C /* Piggy-BankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C2A2BB2C3D7B47009F219C /* Build configuration list for PBXNativeTarget "Piggy-BankTests" */;
+			buildPhases = (
+				A5C2A2A02C3D7B46009F219C /* Sources */,
+				A5C2A2A12C3D7B46009F219C /* Frameworks */,
+				A5C2A2A22C3D7B46009F219C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C2A2A62C3D7B46009F219C /* PBXTargetDependency */,
+			);
+			name = "Piggy-BankTests";
+			productName = "Piggy-BankTests";
+			productReference = A5C2A2A42C3D7B46009F219C /* Piggy-BankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5C2A2AD2C3D7B46009F219C /* Piggy-BankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C2A2BE2C3D7B47009F219C /* Build configuration list for PBXNativeTarget "Piggy-BankUITests" */;
+			buildPhases = (
+				A5C2A2AA2C3D7B46009F219C /* Sources */,
+				A5C2A2AB2C3D7B46009F219C /* Frameworks */,
+				A5C2A2AC2C3D7B46009F219C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C2A2B02C3D7B47009F219C /* PBXTargetDependency */,
+			);
+			name = "Piggy-BankUITests";
+			productName = "Piggy-BankUITests";
+			productReference = A5C2A2AE2C3D7B47009F219C /* Piggy-BankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5C2A28A2C3D7B3F009F219C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A5C2A2912C3D7B3F009F219C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A5C2A2A32C3D7B46009F219C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A5C2A2912C3D7B3F009F219C;
+					};
+					A5C2A2AD2C3D7B46009F219C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A5C2A2912C3D7B3F009F219C;
+					};
+				};
+			};
+			buildConfigurationList = A5C2A28D2C3D7B3F009F219C /* Build configuration list for PBXProject "Piggy-Bank" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5C2A2892C3D7B3F009F219C;
+			productRefGroup = A5C2A2932C3D7B3F009F219C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5C2A2912C3D7B3F009F219C /* Piggy-Bank */,
+				A5C2A2A32C3D7B46009F219C /* Piggy-BankTests */,
+				A5C2A2AD2C3D7B46009F219C /* Piggy-BankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5C2A2902C3D7B3F009F219C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C2A29F2C3D7B46009F219C /* Preview Assets.xcassets in Resources */,
+				A5C2A2C42C3DCD47009F219C /* Launch Screen.storyboard in Resources */,
+				A5C2A29C2C3D7B46009F219C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C2A2A22C3D7B46009F219C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C2A2AC2C3D7B46009F219C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5C2A28E2C3D7B3F009F219C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C2A2982C3D7B3F009F219C /* ContentView.swift in Sources */,
+				A5C2A29A2C3D7B3F009F219C /* Item.swift in Sources */,
+				A5C2A2962C3D7B3F009F219C /* Piggy_BankApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C2A2A02C3D7B46009F219C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C2A2A92C3D7B46009F219C /* Piggy_BankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C2A2AA2C3D7B46009F219C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C2A2B32C3D7B47009F219C /* Piggy_BankUITests.swift in Sources */,
+				A5C2A2B52C3D7B47009F219C /* Piggy_BankUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5C2A2A62C3D7B46009F219C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C2A2912C3D7B3F009F219C /* Piggy-Bank */;
+			targetProxy = A5C2A2A52C3D7B46009F219C /* PBXContainerItemProxy */;
+		};
+		A5C2A2B02C3D7B47009F219C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C2A2912C3D7B3F009F219C /* Piggy-Bank */;
+			targetProxy = A5C2A2AF2C3D7B47009F219C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A5C2A2B62C3D7B47009F219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5C2A2B72C3D7B47009F219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5C2A2B92C3D7B47009F219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Piggy-Bank/Preview Content\"";
+				DEVELOPMENT_TEAM = W8Q4NU9NZM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huythai.Piggy-Bank";
+				PRODUCT_NAME = "Piggy Bank";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5C2A2BA2C3D7B47009F219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Piggy-Bank/Preview Content\"";
+				DEVELOPMENT_TEAM = W8Q4NU9NZM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huythai.Piggy-Bank";
+				PRODUCT_NAME = "Piggy Bank";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5C2A2BC2C3D7B47009F219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8Q4NU9NZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huythai..Piggy-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Piggy-Bank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Piggy-Bank";
+			};
+			name = Debug;
+		};
+		A5C2A2BD2C3D7B47009F219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8Q4NU9NZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huythai..Piggy-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Piggy-Bank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Piggy-Bank";
+			};
+			name = Release;
+		};
+		A5C2A2BF2C3D7B47009F219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8Q4NU9NZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huythai..Piggy-BankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Piggy-Bank";
+			};
+			name = Debug;
+		};
+		A5C2A2C02C3D7B47009F219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8Q4NU9NZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huythai..Piggy-BankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Piggy-Bank";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5C2A28D2C3D7B3F009F219C /* Build configuration list for PBXProject "Piggy-Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C2A2B62C3D7B47009F219C /* Debug */,
+				A5C2A2B72C3D7B47009F219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C2A2B82C3D7B47009F219C /* Build configuration list for PBXNativeTarget "Piggy-Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C2A2B92C3D7B47009F219C /* Debug */,
+				A5C2A2BA2C3D7B47009F219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C2A2BB2C3D7B47009F219C /* Build configuration list for PBXNativeTarget "Piggy-BankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C2A2BC2C3D7B47009F219C /* Debug */,
+				A5C2A2BD2C3D7B47009F219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C2A2BE2C3D7B47009F219C /* Build configuration list for PBXNativeTarget "Piggy-BankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C2A2BF2C3D7B47009F219C /* Debug */,
+				A5C2A2C02C3D7B47009F219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5C2A28A2C3D7B3F009F219C /* Project object */;
+}
