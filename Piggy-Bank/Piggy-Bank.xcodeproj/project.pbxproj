@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5C0FA982C43F9F700BE3556 /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C0FA972C43F9F700BE3556 /* OffsetKey.swift */; };
 		A5C2A2962C3D7B3F009F219C /* Piggy_BankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2952C3D7B3F009F219C /* Piggy_BankApp.swift */; };
 		A5C2A2982C3D7B3F009F219C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2972C3D7B3F009F219C /* ContentView.swift */; };
 		A5C2A29A2C3D7B3F009F219C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2A2992C3D7B3F009F219C /* Item.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5C0FA972C43F9F700BE3556 /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
 		A5C2A2922C3D7B3F009F219C /* Piggy Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Piggy Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C2A2952C3D7B3F009F219C /* Piggy_BankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piggy_BankApp.swift; sourceTree = "<group>"; };
 		A5C2A2972C3D7B3F009F219C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				A5C2A2CF2C3DE172009F219C /* Date+Extension.swift */,
+				A5C0FA972C43F9F700BE3556 /* OffsetKey.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				A5C2A2982C3D7B3F009F219C /* ContentView.swift in Sources */,
 				A5C2A2C72C3DD78D009F219C /* TransactionView.swift in Sources */,
+				A5C0FA982C43F9F700BE3556 /* OffsetKey.swift in Sources */,
 				A5C2A2CA2C3DD81B009F219C /* StatisticalView.swift in Sources */,
 				A5C2A2CC2C3DD857009F219C /* SettingsView.swift in Sources */,
 				A5C2A2D02C3DE172009F219C /* Date+Extension.swift in Sources */,

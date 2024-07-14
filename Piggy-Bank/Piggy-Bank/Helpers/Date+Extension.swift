@@ -29,6 +29,31 @@ extension Date {
         return weekDates
     }
     
+    func getAllDatesInPreviousWeek() -> [Date.WeekDay] {
+        var calendar = Calendar.current
+        calendar.firstWeekday = 2
+       
+        guard let startOfWeek = calendar.dateInterval(of: .weekOfMonth, for: self)?.start,
+              let previousDate = calendar.date(byAdding: .day, value: -1, to: startOfWeek) else {
+            return []
+        }
+        
+        return previousDate.getAllDatesInWeek()
+    }
+    
+    func getAllDatesInNextWeek() -> [Date.WeekDay] {
+        var calendar = Calendar.current
+        calendar.firstWeekday = 2
+       
+        guard let startOfWeek = calendar.dateInterval(of: .weekOfMonth, for: self)?.start,
+              let nextDate = calendar.date(byAdding: .day, value: 7, to: startOfWeek) else {
+            return []
+        }
+        
+        return nextDate.getAllDatesInWeek()
+    }
+    
+    
     func isTheSameDay(with date: Date) -> Bool {
         let calendar = Calendar.current
         return calendar.isDate(self, inSameDayAs: date)
