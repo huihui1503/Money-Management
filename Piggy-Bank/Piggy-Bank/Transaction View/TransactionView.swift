@@ -98,7 +98,7 @@ struct TransactionView: View {
                             
                             if day.date.isToday() {
                                 Circle()
-                                    .fill(.cyan)
+                                    .fill(.scarlet)
                                     .frame(width: 5, height: 5)
                                     .vSpacing(.bottom)
                                     .offset(y: 12)
