@@ -59,6 +59,11 @@ extension Date {
         return calendar.isDate(self, inSameDayAs: date)
     }
     
+    func isToday() -> Bool {
+        let today = Date()
+        return today.isTheSameDay(with: self)
+    }
+    
     struct WeekDay: Identifiable, Hashable {
         let id: UUID = .init()
         var date: Date

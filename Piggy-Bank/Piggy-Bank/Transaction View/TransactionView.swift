@@ -16,7 +16,7 @@ struct TransactionView: View {
         VStack(alignment: .leading, spacing: 0) {
             HeaderView()
             ScrollView {
-                
+                TransactionListView(currentDate: $interactor.selectedDate)
             }
         }
         .frame(maxHeight: .infinity, alignment: .top)
@@ -42,9 +42,9 @@ struct TransactionView: View {
             }
             .overlay(content: {
                 DatePicker("Due Date", selection: $interactor.selectedDate, displayedComponents: .date)
-                            .labelsHidden()
-                            .allowsHitTesting(true)
-                            .opacity(0.0101)
+                    .labelsHidden()
+                    .allowsHitTesting(true)
+                    .opacity(0.0101)
             })
             
             TabView(selection: $interactor.selectedTabViewIndex, content: {
@@ -64,61 +64,56 @@ struct TransactionView: View {
                 }
             }
             .onChange(of: interactor.selectedDate, initial: false) { oldValue, newValue in
-                interactor.updateWeekSliders(from: newValue)
+                withAnimation(.snappy) {
+                    interactor.updateWeekSliders(from: newValue)
+                }
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading) // show the position in the parent view
         .padding(15)
     }
-   
+    
     @ViewBuilder
     func WeekView(week: [Date.WeekDay]) -> some View {
-        HStack() {
+        HStack(spacing: 0) {
             ForEach(week) { day in
                 VStack(spacing: 10) {
                     Text(day.date.format("E"))
                         .font(.callout)
+                        .textScale(.secondary)
                         .fontWeight(.medium)
                         .foregroundStyle(.gray)
                     Text(day.date.format("dd"))
                         .font(.callout)
                         .fontWeight(.bold)
+                        .textScale(.secondary)
                         .foregroundStyle(day.date.isTheSameDay(with: interactor.selectedDate) ? .white : .gray)
-                        .background{
+                        .frame(width: 35, height: 35, alignment: .center)
+                        .background(content: {
                             if day.date.isTheSameDay(with: interactor.selectedDate) {
                                 Circle()
                                     .fill(.coral)
-                                    .frame(width: 30, height: 30)
-                                    .matchedGeometryEffect(id: "TABINDICATOR", in: animation)
+                                    .matchedGeometryEffect(id: "TABINDICATOR", in: animation) // add animatiion for all the place where the object is updated
                             }
-                        }
-                        .background {
-                            Circle()
-                                .strokeBorder(.greyBackground, lineWidth: 1)
-                                .background(Circle().foregroundColor(.clear))
-                                .frame(width: 30, height: 30)
-                        }
+                            
+                            if day.date.isToday() {
+                                Circle()
+                                    .fill(.cyan)
+                                    .frame(width: 5, height: 5)
+                                    .vSpacing(.bottom)
+                                    .offset(y: 12)
+                            }
+                        })
+                        .background(.white.shadow(.drop(radius: 1)), in: .circle)
                 }
-                .frame(maxWidth: .infinity)
+                .hSpacing(.center)
+                .contentShape(.rect)
                 .onTapGesture {
                     withAnimation(.snappy) {
                         interactor.selectedDate = day.date
                     }
                 }
-                .background {
-                    GeometryReader { proxy in
-                        let minX = proxy.frame(in: .global).minX
-                        Color.clear
-                            .preference(key: OffsetKey.self, value: minX)
-                            .onPreferenceChange(OffsetKey.self) { value in
-                                interactor.loadWeekSliderInAdvance(tabViewEdge: value)
-                            }
-                    }
-                }
             }
         }
     }
-    
-    
-   
 }

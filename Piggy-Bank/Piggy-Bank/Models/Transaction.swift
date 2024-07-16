@@ -16,12 +16,5 @@ struct Transaction: Hashable, Identifiable {
 }
 
 extension Transaction {
-    static var sampleData: [Transaction] = [
-        .init(date: .init(), amount: 200, category: "Housing", note: "Renting"),
-        .init(date: .init(), amount: 200, category: "Food", note: "Renting"),
-        .init(date: .init(), amount: 200, category: "Beauty", note: "Renting"),
-        .init(date: .init(), amount: 200, category: "Housing", note: "Renting"),
-        .init(date: .init(), amount: 200, category: "Housing", note: "Renting"),
-        .init(date: .init(), amount: 200, category: "Housing", note: "Renting")
-    ]
+    
 }
